@@ -1,166 +1,901 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#04101f">
-<meta name="description" content="SHL International welcomes Sara Huang, Supply Chain Manager — Shanghai Office.">
-<title>SHL / PEOPLE — Welcome Sara Huang</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:#06101e;font-family:"Manrope",Arial,sans-serif}
-#poster{
-  position:relative;isolation:isolate;overflow:hidden;width:1080px;height:1350px;flex:none;color:#f8f6ef;
-  background:
-    radial-gradient(ellipse 530px 650px at 78% 35%,rgba(42,112,166,.41),transparent 74%),
-    radial-gradient(ellipse 680px 550px at 14% 84%,rgba(14,56,91,.44),transparent 78%),
-    linear-gradient(118deg,#051120 0%,#091b2f 50%,#04121f 100%);
-}
-#poster::before{content:"";position:absolute;inset:25px;z-index:18;pointer-events:none;border:1px solid rgba(235,200,129,.15)}
-#poster::after{content:"";position:absolute;inset:0;z-index:19;pointer-events:none;opacity:.19;background-image:radial-gradient(rgba(222,198,152,.35) .7px,transparent .9px);background-size:8px 8px}
-.corner{position:absolute;z-index:20;width:25px;height:25px;border:solid #e7c688}
-.corner.tl{top:25px;left:25px;border-width:2px 0 0 2px}.corner.tr{top:25px;right:25px;border-width:2px 2px 0 0}
-.corner.bl{bottom:25px;left:25px;border-width:0 0 2px 2px}.corner.br{bottom:25px;right:25px;border-width:0 2px 2px 0}
-.vertical-rail{position:absolute;left:31px;top:195px;bottom:185px;width:1px;background:linear-gradient(180deg,transparent,rgba(210,182,120,.18),transparent)}
-.big-s{position:absolute;z-index:1;left:-180px;top:90px;font-size:960px;line-height:1;font-weight:800;letter-spacing:-95px;color:transparent;-webkit-text-stroke:2px rgba(152,187,210,.04);user-select:none;pointer-events:none}
-.ambient-spot{position:absolute;z-index:1;right:-220px;top:190px;width:840px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(222,175,88,.12),transparent 62%)}
-.framing{position:absolute;z-index:2;right:-125px;top:206px;width:650px;height:650px;border-radius:50%;border:1px solid rgba(238,205,144,.29)}
-.framing:before{content:"";position:absolute;inset:43px;border:1px solid rgba(236,194,117,.25);border-radius:50%}
-.framing:after{content:"";position:absolute;inset:105px;border:1px dashed rgba(241,203,132,.2);border-radius:50%}
-.arch{position:absolute;z-index:2;top:213px;left:575px;width:440px;height:560px;border-radius:240px 240px 0 0;border:1px solid rgba(238,201,133,.42);border-bottom:0;transform:rotate(-7deg);
-box-shadow:12px -15px 0 -13px rgba(236,199,137,.57)}
-.arch:after{content:"";position:absolute;inset:22px;border:1px solid rgba(242,207,142,.15);border-bottom:0;border-radius:220px 220px 0 0}
-.route-svg{position:absolute;z-index:3;inset:0;pointer-events:none}
-.meridian{position:absolute;z-index:1;right:94px;top:250px;width:520px;height:520px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0,transparent 72px,rgba(202,176,122,.085) 73px,transparent 74px);opacity:.65}
-.header{position:absolute;z-index:11;left:79px;right:78px;top:66px;height:95px;display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:17px}
-.brand-icon{width:77px;height:77px;object-fit:contain;filter:drop-shadow(0 8px 11px #0005);border:1px solid rgba(225,193,126,.43)}
-.brand-info{display:flex;flex-direction:column;gap:6px}
-.brand-info strong{font-size:25px;line-height:1;letter-spacing:1.65px;font-weight:800}
-.brand-info small{font-size:10px;letter-spacing:2.4px;color:#c6d0da;font-weight:700}
-.header-meta{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
-.header-meta strong{font-size:12px;letter-spacing:2.35px;color:#ead09d;font-weight:800}
-.header-meta small{font-size:10px;letter-spacing:2.2px;color:#a8c4d5}
-.topline{position:absolute;z-index:11;top:182px;left:79px;right:79px;height:1px;background:linear-gradient(90deg,#e2c080,rgba(231,203,152,.32),transparent)}
-.issue{position:absolute;z-index:11;right:79px;top:201px;font-size:10px;letter-spacing:2px;color:#d4bd8f}
-.hero{position:absolute;z-index:13;top:239px;left:80px;width:560px}
-.eyebrow{display:flex;align-items:center;gap:15px;text-transform:uppercase;font-size:13px;letter-spacing:3.15px;font-weight:800;color:#e4c48a}
-.eyebrow:before{content:"";width:31px;height:2px;background:#e4c48a}
-.welcome{font-size:94px;line-height:1;letter-spacing:-5.4px;font-weight:800;position:absolute;left:79px;top:293px;z-index:5;color:transparent;
--webkit-text-stroke:1.4px rgba(232,208,161,.23);white-space:nowrap}
-.hero h1{margin:124px 0 0;display:flex;flex-direction:column;font-size:153px;line-height:.86;letter-spacing:-11px;font-weight:800;text-shadow:0 9px 30px #0005}
-.hero h1 span:first-child{position:relative;z-index:13}
-.hero h1 span:last-child{position:relative;z-index:13;margin-top:13px;font-size:142px;letter-spacing:-9px}
-.hero h1 i{font-style:normal;color:#e9c98c}
-.hero-rule{position:absolute;left:0;top:484px;width:460px;height:1px;background:linear-gradient(90deg,#e5c287,rgba(229,194,135,.18))}
-.hero-title{position:absolute;left:0;top:506px;font-size:24px;font-weight:800;letter-spacing:-.5px;white-space:nowrap}
-.hero-office{position:absolute;left:0;top:557px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;letter-spacing:1.2px;color:#c7d8e4}
-.office-dot{height:8px;width:8px;border-radius:50%;background:#e9c887;box-shadow:0 0 0 5px rgba(232,198,133,.11)}
-.portrait-backdrop{position:absolute;z-index:5;right:-10px;top:310px;width:540px;height:515px;
-background:radial-gradient(ellipse at 45% 35%,rgba(160,198,221,.17),rgba(20,55,88,.11) 57%,transparent 76%)}
-.portrait{position:absolute;z-index:10;right:4px;top:313px;width:530px;height:538px;overflow:hidden;pointer-events:none}
-.portrait img{position:absolute;right:23px;bottom:18px;width:500px;height:500px;object-fit:contain;object-position:bottom center;
-filter:drop-shadow(-8px 14px 28px rgba(3,14,28,.45)) saturate(.96) contrast(1.035)}
-.portrait:after{content:"";position:absolute;inset:auto 0 0;height:142px;
-background:linear-gradient(to bottom,transparent,rgba(9,26,45,.38) 52%,#091a2c 100%)}
-.photo-caption{position:absolute;z-index:14;top:753px;right:78px;color:#dec18c;writing-mode:vertical-rl;font-size:10px;letter-spacing:3.5px;font-weight:800}
-.stamp{position:absolute;z-index:12;top:820px;left:80px;display:flex;align-items:center;gap:12px;color:#e6c78e;font-size:12px;letter-spacing:2px;font-weight:800}
-.stamp span{width:33px;height:1px;background:#e6c78e}
-.hero-separator{position:absolute;z-index:12;top:849px;left:80px;right:80px;height:1px;background:linear-gradient(90deg,#daba7e,rgba(218,186,126,.21))}
-.stat{position:absolute;z-index:13;top:866px;left:72px;right:80px;display:flex;align-items:center;height:180px}
-.stat-number{font-size:183px;font-weight:800;letter-spacing:-17px;line-height:1;color:#efd099;text-shadow:0 8px 25px rgba(237,197,124,.1)}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHL GROUP — Welcome Sara Huang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-.stat-info{margin-left:64px;margin-top:3px}
-.stat-kicker{color:#e7c686;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}
-.stat-heading{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:44px;margin-top:7px;line-height:1.2}
-.stat-description{font-size:15px;line-height:1.65;color:#bdcfdd;margin-top:10px;font-weight:600}
-.expertise{position:absolute;z-index:13;top:1081px;left:80px;right:80px;padding-top:20px;border-top:1px solid rgba(233,198,136,.3)}
-.expertise-head{color:#c7b081;text-transform:uppercase;font-weight:800;letter-spacing:2.6px;font-size:10.5px}
-.expertise-items{display:flex;align-items:stretch;justify-content:space-between;gap:0;margin-top:17px}
-.expertise-items div{flex:1;border-right:1px solid rgba(227,196,139,.22);padding:0 19px;color:#e9eef2;font-size:13px;line-height:1.6;letter-spacing:.05px;font-weight:700}
-.expertise-items div:first-child{padding-left:0}
-.expertise-items div:last-child{border-right:0;padding-right:0}
-.baseglow{position:absolute;z-index:1;left:-40px;right:-40px;bottom:65px;height:120px;background:linear-gradient(0deg,rgba(10,50,78,.3),transparent)}
-.footer-rule{position:absolute;z-index:13;left:80px;right:80px;top:1216px;height:1px;background:linear-gradient(90deg,rgba(222,183,113,.6),rgba(222,183,113,.24))}
-.footer{position:absolute;z-index:13;left:80px;right:80px;bottom:63px;display:flex;align-items:flex-end;justify-content:space-between}
-.footer-quote{font-family:"Playfair Display",Georgia,serif;font-size:28px;line-height:1.24;font-weight:500;letter-spacing:-.6px}
-.footer-quote em{font-style:italic;color:#ebca8a}
-.footer-right{text-align:right;display:flex;flex-direction:column;gap:8px}
-.footer-right strong{font-size:18px;font-weight:800;letter-spacing:1.1px;color:#f6edd9}
-.footer-right span{font-size:10.5px;letter-spacing:2.4px;color:#a8c2d5;font-weight:800}
-@media print{
-@page{size:1080px 1350px;margin:0}
-html,body{height:1350px;width:1080px}
-#poster{margin:0}
-*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-}
-</style>
+    :root {
+      --midnight: #030a16;
+      --navy-900: #06182f;
+      --navy-800: #0b2649;
+      --navy-700: #123866;
+      --gold-100: #FCF7E8;
+      --gold-200: #F6E6B8;
+      --gold-300: #E8CF8B;
+      --gold-400: #D5AC58;
+      --gold-500: #BA9038;
+      --gold-600: #946F22;
+      --warm-white: #FFFFFF;
+      --off-white: #F1F5F9;
+      --slate-light: #9BB2CA;
+      --slate-muted: #607994;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #020710;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* EXACT 1080 x 1350 px (4:5 PORTRAIT RATIO FOR LINKEDIN) */
+    .poster-canvas {
+      width: 1080px;
+      height: 1350px;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at 74% 32%, #143e6a 0%, #0c2b4e 34%, #06182f 68%, #030c18 100%);
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(213, 172, 88, 0.25);
+    }
+
+    /* === ATMOSPHERIC EDITORIAL LIGHTING & DEPTH === */
+    .spotlight-portrait {
+      position: absolute;
+      top: 100px;
+      right: 30px;
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(213, 172, 88, 0.16) 0%, rgba(18, 56, 102, 0.35) 45%, transparent 70%);
+      filter: blur(40px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .spotlight-ambient-left {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(16, 56, 100, 0.5) 0%, transparent 68%);
+      filter: blur(50px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .spotlight-bottom-glow {
+      position: absolute;
+      bottom: 60px;
+      left: 100px;
+      width: 800px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(16, 56, 100, 0.35) 0%, transparent 70%);
+      filter: blur(50px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Luxury canvas film texture */
+    .film-grain {
+      position: absolute;
+      inset: 0;
+      opacity: 0.035;
+      pointer-events: none;
+      z-index: 2;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Architectural frame rules */
+    .outer-border {
+      position: absolute;
+      inset: 26px;
+      border: 1px solid rgba(213, 172, 88, 0.18);
+      pointer-events: none;
+      z-index: 30;
+    }
+
+    .corner-notch {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-color: var(--gold-400);
+      border-style: solid;
+      z-index: 31;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+    .corner-tl { top: 22px; left: 22px; border-width: 2px 0 0 2px; }
+    .corner-tr { top: 22px; right: 22px; border-width: 2px 2px 0 0; }
+    .corner-bl { bottom: 22px; left: 22px; border-width: 0 0 2px 2px; }
+    .corner-br { bottom: 22px; right: 22px; border-width: 0 2px 2px 0; }
+
+    /* === ENORMOUS WATERMARK "20" (MIDDLE BACKGROUND GRAPHIC) === */
+    .watermark-twenty {
+      position: absolute;
+      left: -20px;
+      top: 360px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 530px;
+      line-height: 0.8;
+      letter-spacing: -26px;
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(213, 172, 88, 0.055);
+      z-index: 3;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .watermark-subtext {
+      position: absolute;
+      top: 275px;
+      left: 70px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 130px;
+      font-weight: 800;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.015);
+      z-index: 3;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* === VECTOR GRAPHICS: DELICATE GOLDEN TRADE ROUTES & ARCS === */
+    .vector-decorations {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    /* Shanghai Skyline Silhouette (Architectural atmosphere at bottom) */
+    .skyline-layer {
+      position: absolute;
+      bottom: 120px;
+      left: 0;
+      right: 0;
+      height: 175px;
+      opacity: 0.085;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    /* === UPPER AREA: BRANDING HEADER === */
+    .top-header {
+      position: absolute;
+      top: 54px;
+      left: 68px;
+      right: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 35;
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* LUXURY OFFICIAL LOGO CREST */
+    .brand-logo-crest {
+      width: 54px;
+      height: 54px;
+      border-radius: 8px;
+      border: 1.5px solid var(--gold-400);
+      background: linear-gradient(135deg, rgba(213, 172, 88, 0.2) 0%, rgba(6, 24, 47, 0.9) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 18px rgba(213, 172, 88, 0.25);
+      position: relative;
+      backdrop-filter: blur(8px);
+      padding: 4px;
+    }
+
+    .brand-logo-crest::after {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      border: 1px solid rgba(213, 172, 88, 0.3);
+      border-radius: 6px;
+      pointer-events: none;
+    }
+
+    .brand-logo-img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+    }
+
+    .brand-title-col {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .brand-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .brand-name {
+      font-family: 'Cinzel', serif;
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: var(--warm-white);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      line-height: 1;
+    }
+
+    .brand-tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4.5px;
+      color: var(--gold-300);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-sub {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--slate-light);
+      opacity: 0.9;
+    }
+
+    .people-leadership-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold-200);
+      border: 1px solid rgba(213, 172, 88, 0.4);
+      background: rgba(11, 38, 73, 0.55);
+      padding: 8px 20px;
+      border-radius: 2px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .badge-live-pulse {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold-400);
+      box-shadow: 0 0 10px var(--gold-400);
+    }
+
+    /* Very thin champagne-gold editorial divider */
+    .top-divider {
+      position: absolute;
+      top: 122px;
+      left: 68px;
+      right: 68px;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        var(--gold-400) 0%,
+        rgba(213, 172, 88, 0.55) 35%,
+        rgba(213, 172, 88, 0.2) 70%,
+        transparent 100%
+      );
+      z-index: 35;
+    }
+
+    .divider-gem {
+      position: absolute;
+      top: 118px;
+      left: 275px;
+      width: 9px;
+      height: 9px;
+      background: var(--gold-400);
+      transform: rotate(45deg);
+      border: 1px solid #fff;
+      box-shadow: 0 0 12px rgba(213, 172, 88, 0.8);
+      z-index: 36;
+    }
+
+    /* === HERO AREA: PORTRAIT OF SARA HUANG (RIGHT, ~52%) === */
+    .portrait-stage {
+      position: absolute;
+      top: 130px;
+      right: 20px;
+      width: 600px;
+      height: 760px;
+      z-index: 15;
+      pointer-events: none;
+    }
+
+    /* Orbital decorative rings behind portrait */
+    .orbital-ring-1 {
+      position: absolute;
+      top: 60px;
+      right: 40px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      border: 1px dashed rgba(213, 172, 88, 0.3);
+      z-index: 2;
+    }
+
+    .orbital-ring-2 {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      border: 1px solid rgba(213, 172, 88, 0.14);
+      z-index: 2;
+    }
+
+    /* Cutout Portrait Container with organic natural fade */
+    .portrait-img-box {
+      position: absolute;
+      top: 40px;
+      right: 25px;
+      width: 550px;
+      height: 700px;
+      z-index: 10;
+      -webkit-mask-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0.8) 62%,
+        rgba(0, 0, 0, 0.38) 72%,
+        rgba(0, 0, 0, 0.08) 80%,
+        rgba(0, 0, 0, 0) 86%
+      );
+      mask-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 0.8) 62%,
+        rgba(0, 0, 0, 0.38) 72%,
+        rgba(0, 0, 0, 0.08) 80%,
+        rgba(0, 0, 0, 0) 86%
+      );
+    }
+
+    .portrait-cutout-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: top center;
+      filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.75)) brightness(1.03) contrast(1.04);
+      transform: scale(1.18);
+      transform-origin: top center;
+    }
+
+    /* === HERO AREA: TYPOGRAPHY (LEFT) === */
+    .hero-content {
+      position: absolute;
+      top: 172px;
+      left: 68px;
+      width: 540px;
+      z-index: 25;
+    }
+
+    .welcome-lead {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .welcome-lead-bar {
+      width: 32px;
+      height: 2.5px;
+      background: var(--gold-400);
+    }
+
+    .welcome-lead-text {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      color: var(--gold-300);
+    }
+
+    /* COMMANDING EXECUTIVE NAME — SARA HUANG (KILLER LOOK) */
+    .name-headline {
+      margin-bottom: 20px;
+    }
+
+    .name-first {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 94px;
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: -2px;
+      color: var(--warm-white);
+      display: block;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .name-last {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 94px;
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: -2px;
+      display: block;
+      background: linear-gradient(135deg, #FFFFFF 20%, #F6E6B8 60%, #D5AC58 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 20px rgba(213, 172, 88, 0.35));
+    }
+
+    /* Gold accent bar beneath name */
+    .name-rule {
+      width: 95px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold-400) 0%, rgba(213, 172, 88, 0) 100%);
+      margin-bottom: 24px;
+    }
+
+    /* Title & Real Contact Metadata */
+    .role-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      color: var(--gold-200);
+      margin-bottom: 10px;
+    }
+
+    .location-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--slate-light);
+      margin-bottom: 14px;
+    }
+
+    .location-pin-icon {
+      width: 14px;
+      height: 14px;
+      fill: var(--gold-400);
+    }
+
+    /* Sleek executive direct desk badge */
+    .executive-contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(18, 56, 102, 0.35);
+      border: 1px solid rgba(213, 172, 88, 0.3);
+      padding: 6px 14px;
+      border-radius: 3px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11.5px;
+      letter-spacing: 1px;
+      color: var(--gold-200);
+    }
+
+    .executive-contact-pill strong {
+      color: var(--warm-white);
+      font-weight: 600;
+    }
+
+    /* === MIDDLE AREA: 20+ YEARS OF EXPERIENCE (METRIC CARD) === */
+    .experience-card {
+      position: absolute;
+      top: 710px;
+      left: 68px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      z-index: 25;
+      background: rgba(6, 24, 47, 0.65);
+      border: 1px solid rgba(213, 172, 88, 0.25);
+      border-left: 4px solid var(--gold-400);
+      padding: 20px 28px;
+      border-radius: 2px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      max-width: 530px;
+    }
+
+    .exp-big-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 104px;
+      font-weight: 700;
+      line-height: 0.85;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F6E6B8 50%, #D5AC58 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -3px;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .exp-plus-sign {
+      font-size: 46px;
+      font-weight: 400;
+      color: var(--gold-300);
+      margin-left: 2px;
+      -webkit-text-fill-color: var(--gold-300);
+    }
+
+    .exp-meta-col {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .exp-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--warm-white);
+    }
+
+    .exp-sub {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      color: var(--slate-light);
+    }
+
+    /* === LOWER AREA: CORE EXPERTISE BAND === */
+    .expertise-band {
+      position: absolute;
+      bottom: 165px;
+      left: 68px;
+      right: 68px;
+      z-index: 25;
+      text-align: center;
+    }
+
+    .expertise-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    .expertise-item {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--off-white);
+      white-space: nowrap;
+      opacity: 0.95;
+    }
+
+    .expertise-diamond {
+      font-size: 9px;
+      color: var(--gold-400);
+      margin: 0 18px;
+      opacity: 0.75;
+    }
+
+    /* Elegant separator line above tagline */
+    .bottom-divider {
+      position: absolute;
+      bottom: 130px;
+      left: 68px;
+      right: 68px;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(213, 172, 88, 0.3) 20%,
+        rgba(213, 172, 88, 0.5) 50%,
+        rgba(213, 172, 88, 0.3) 80%,
+        transparent 100%
+      );
+      z-index: 25;
+    }
+
+    /* === BOTTOM AREA: TAGLINE & BRAND FINISH === */
+    .bottom-footer {
+      position: absolute;
+      bottom: 48px;
+      left: 68px;
+      right: 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 25;
+    }
+
+    .footer-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .tagline-text {
+      font-family: 'Cinzel', serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #FFFFFF 0%, var(--gold-200) 50%, var(--gold-400) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 15px rgba(213, 172, 88, 0.25);
+    }
+
+    .company-signoff {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--slate-muted);
+    }
+
+    .footer-right-hubs {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hub-code {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-300);
+      opacity: 0.9;
+    }
+
+    .hub-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--gold-400);
+      opacity: 0.6;
+    }
+
+    .footer-web-badge {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: var(--warm-white);
+      background: rgba(213, 172, 88, 0.16);
+      border: 1px solid rgba(213, 172, 88, 0.4);
+      padding: 4px 10px;
+      border-radius: 2px;
+      margin-left: 4px;
+    }
+  </style>
 </head>
 <body>
-<main id="poster" role="img" aria-label="SHL International welcomes Sara Huang, Supply Chain Manager at the Shanghai office, with 20 years of industry experience.">
-<div class="big-s" aria-hidden="true">S</div><div class="ambient-spot"></div>
-<div class="meridian"></div><div class="framing"></div><div class="arch"></div><div class="vertical-rail"></div>
-<div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
-<svg class="route-svg" viewBox="0 0 1080 1350" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
- <defs><linearGradient id="travel" x1="0%" x2="100%" y1="0%" y2="0%">
-  <stop offset="0" stop-color="#e9c887" stop-opacity="0"/>
-  <stop offset=".65" stop-color="#e9c887" stop-opacity=".7"/>
-  <stop offset="1" stop-color="#e9c887" stop-opacity=".15"/>
- </linearGradient></defs>
- <path d="M345 801 Q635 666 825 476 T1130 274" stroke="url(#travel)" stroke-dasharray="4 10" fill="none" stroke-width="1.5"/>
- <path d="M380 816 Q713 739 810 581 T1130 485" stroke="#e6c38b" opacity=".31" fill="none" stroke-width="1"/>
- <circle cx="816" cy="492" r="4" fill="#f2d9a3"/>
- <circle cx="816" cy="492" r="14" fill="none" stroke="#f2d9a3" opacity=".45" stroke-width="1"/>
- <circle cx="983" cy="359" r="3" fill="#f2d9a3"/>
- <circle cx="983" cy="359" r="11" fill="none" stroke="#f2d9a3" opacity=".35" stroke-width="1"/>
-</svg>
-<header class="header">
- <div class="brand">
-  <img class="brand-icon" src="assets/shl-logo-highres.png" alt="SHL official company logo">
-  <div class="brand-info"><strong>SHL INTERNATIONAL</strong><small>GLOBAL LOGISTICS &amp; SUPPLY CHAIN</small></div>
- </div>
- <div class="header-meta"><strong>SHL / PEOPLE</strong><small>THE SHANGHAI EDITION</small></div>
-</header>
-<div class="topline"></div><div class="issue">ISSUE 01 / THE PEOPLE WHO MOVE THE WORLD</div>
-<div class="welcome" aria-hidden="true">WELCOME.</div>
-<div class="portrait-backdrop"></div>
-<div class="portrait"><img src="assets/sara-huang-isolated.png" alt="Sara Huang portrait"></div>
-<section class="hero" aria-label="Welcome and appointment announcement">
- <div class="eyebrow">A new chapter begins</div>
- <h1><span>SARA<i>.</i></span><span>HUANG</span></h1>
- <div class="hero-rule"></div>
- <div class="hero-title">Supply Chain Manager</div>
- <div class="hero-office"><span class="office-dot"></span>Shanghai Office &nbsp; / &nbsp; SHL Group</div>
-</section>
-<div class="stamp"><span></span>WELCOME TO SHL INTERNATIONAL</div>
-<div class="photo-caption">NEW PERSPECTIVES. GLOBAL POSSIBILITIES.</div>
-<div class="hero-separator"></div>
-<section class="stat">
- <div class="stat-number">20</div>
- <div class="stat-info">
-  <div class="stat-kicker">Experience that makes the difference</div>
-  <div class="stat-heading">Years of expertise.</div>
-  <div class="stat-description">Vehicle logistics • International trading<br>Customer service &amp; operational support</div>
- </div>
-</section>
-<section class="expertise">
- <div class="expertise-head">Built on expertise / Focused on possibility</div>
- <div class="expertise-items">
-  <div>Vehicle<br>Logistics</div>
-  <div>International<br>Trading</div>
-  <div>Logistics<br>Customer Service</div>
-  <div>Operational<br>Support</div>
- </div>
-</section>
-<div class="baseglow"></div><div class="footer-rule"></div>
-<footer class="footer">
- <div class="footer-quote">Connecting the world.<br><em>Delivering possibilities.</em></div>
- <div class="footer-right"><strong>SHL GROUP</strong><span>SHLSHL.COM</span></div>
-</footer>
-</main>
+
+  <!-- THE MASTER POSTER: 1080 x 1350 px -->
+  <div class="poster-canvas" id="poster">
+
+    <!-- Atmospheric lighting effects -->
+    <div class="spotlight-portrait"></div>
+    <div class="spotlight-ambient-left"></div>
+    <div class="spotlight-bottom-glow"></div>
+    <div class="film-grain"></div>
+
+    <!-- Architectural framing border -->
+    <div class="outer-border"></div>
+    <div class="corner-notch corner-tl"></div>
+    <div class="corner-notch corner-tr"></div>
+    <div class="corner-notch corner-bl"></div>
+    <div class="corner-notch corner-br"></div>
+
+    <!-- Enormous Low-Opacity "20" & SHL Editorial Background Graphics -->
+    <div class="watermark-twenty" aria-hidden="true">20</div>
+    <div class="watermark-subtext" aria-hidden="true">SHL LEADERSHIP</div>
+
+    <!-- Vector Trade Routes & Delicate Golden Curves -->
+    <svg class="vector-decorations" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="tradeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#D5AC58" stop-opacity="0.05"/>
+          <stop offset="30%" stop-color="#D5AC58" stop-opacity="0.5"/>
+          <stop offset="60%" stop-color="#E8CC89" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#D5AC58" stop-opacity="0.08"/>
+        </linearGradient>
+        <radialGradient id="hubNode" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#F4E4BA" stop-opacity="0.95"/>
+          <stop offset="60%" stop-color="#D5AC58" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#D5AC58" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- Global Maritime & Air Trade Corridors across the composition -->
+      <path d="M 40 820 Q 240 760 480 800 T 900 730 Q 1000 700 1060 720"
+            fill="none" stroke="url(#tradeGold)" stroke-width="1.3" opacity="0.65"/>
+      <path d="M 60 860 Q 280 800 540 840 T 960 780 Q 1020 770 1060 790"
+            fill="none" stroke="url(#tradeGold)" stroke-width="0.9" opacity="0.4"/>
+      <path d="M 80 900 Q 320 850 600 880 T 1020 830"
+            fill="none" stroke="url(#tradeGold)" stroke-width="0.6" stroke-dasharray="4 6" opacity="0.32"/>
+
+      <!-- Delicate Longitude & Celestial Grid Lines -->
+      <line x1="220" y1="40" x2="220" y2="1310" stroke="#D5AC58" stroke-width="0.4" stroke-dasharray="2 12" opacity="0.15"/>
+      <line x1="480" y1="40" x2="480" y2="1310" stroke="#D5AC58" stroke-width="0.4" stroke-dasharray="2 12" opacity="0.12"/>
+      <line x1="720" y1="40" x2="720" y2="1310" stroke="#D5AC58" stroke-width="0.4" stroke-dasharray="2 12" opacity="0.12"/>
+
+      <!-- Glowing Global Destination Nodes -->
+      <circle cx="240" cy="795" r="2.5" fill="#F4E4BA"/>
+      <circle cx="240" cy="795" r="7" fill="url(#hubNode)"/>
+      <circle cx="480" cy="800" r="3" fill="#F4E4BA"/>
+      <circle cx="480" cy="800" r="9" fill="url(#hubNode)"/>
+      <circle cx="720" cy="760" r="3.5" fill="#F4E4BA"/>
+      <circle cx="720" cy="760" r="10" fill="url(#hubNode)"/>
+      <circle cx="900" cy="730" r="3" fill="#F4E4BA"/>
+      <circle cx="900" cy="730" r="8" fill="url(#hubNode)"/>
+      <circle cx="540" cy="840" r="2" fill="#F4E4BA"/>
+      <circle cx="960" cy="780" r="2" fill="#F4E4BA"/>
+    </svg>
+
+    <!-- Shanghai Skyline Silhouette (Architectural Atmosphere) -->
+    <div class="skyline-layer">
+      <svg viewBox="0 0 1080 175" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="100%">
+        <path d="M0,175 L0,145 L35,145 L35,130 L55,130 L55,138 L80,138 L80,117 L95,117 L100,105 L108,105 L112,117 L130,117 L130,97 L145,97 L145,109 L165,109 L165,85 L172,85 L175,45 L178,85 L188,85 L188,105 L210,105 L210,90 L225,90 L225,105 L245,105 L245,77 L252,77 L258,57 L264,77 L270,77 L270,105 L295,105 L295,117 L320,117 L320,99 L335,99 L335,79 L342,79 L345,40 L349,79 L355,79 L355,99 L380,99 L380,110 L405,110 L405,93 L420,93 L420,73 L425,73 L428,29 L431,15 L434,29 L438,73 L445,73 L445,93 L470,93 L470,105 L500,105 L500,83 L515,83 L515,69 L522,69 L525,45 L528,69 L535,69 L535,83 L560,83 L560,97 L590,97 L590,110 L620,110 L620,79 L630,79 L633,33 L636,79 L645,79 L645,110 L680,110 L680,97 L700,97 L700,115 L735,115 L735,85 L745,85 L750,51 L755,85 L765,85 L765,115 L800,115 L800,100 L825,100 L825,120 L860,120 L860,105 L885,105 L885,125 L920,125 L920,110 L945,110 L945,129 L980,129 L980,113 L1010,113 L1010,133 L1045,133 L1045,143 L1080,143 L1080,175 Z" fill="#D5AC58"/>
+      </svg>
+    </div>
+
+    <!-- UPPER AREA: BRANDING WITH OFFICIAL SHL LOGO -->
+    <header class="top-header">
+      <div class="brand-wrap">
+        <div class="brand-logo-crest">
+          <img src="assets/shl-logo.png" alt="SHL International Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-title-col">
+          <div class="brand-title-row">
+            <h1 class="brand-name">SHL</h1>
+            <span class="brand-tag">GROUP</span>
+          </div>
+          <span class="brand-sub">Global Logistics &amp; Supply Chain Solutions</span>
+        </div>
+      </div>
+      <div class="people-leadership-badge">
+        <div class="badge-live-pulse"></div>
+        <span>People &amp; Leadership</span>
+      </div>
+    </header>
+
+    <!-- Very thin champagne-gold editorial divider -->
+    <div class="top-divider"></div>
+    <div class="divider-gem"></div>
+
+    <!-- HERO AREA: PORTRAIT OF SARA HUANG (RIGHT, ~52%) -->
+    <div class="portrait-stage">
+      <div class="orbital-ring-1"></div>
+      <div class="orbital-ring-2"></div>
+      
+      <div class="portrait-img-box">
+        <!-- Authentic photograph of Sara Huang, isolated with organic fade -->
+        <img src="assets/sara-huang-cutout.png" alt="Sara Huang - Supply Chain Manager" class="portrait-cutout-img">
+      </div>
+    </div>
+
+    <!-- HERO AREA: TYPOGRAPHY (LEFT) -->
+    <section class="hero-content">
+      <div class="welcome-lead">
+        <div class="welcome-lead-bar"></div>
+        <span class="welcome-lead-text">Welcome to SHL Group</span>
+      </div>
+
+      <div class="name-headline">
+        <span class="name-first">SARA</span>
+        <span class="name-last">HUANG</span>
+      </div>
+
+      <div class="name-rule"></div>
+
+      <div class="role-title">Supply Chain Manager</div>
+      
+      <div class="location-row">
+        <svg class="location-pin-icon" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>Shanghai Headquarters · Global Operations</span>
+      </div>
+
+      <div class="executive-contact-pill">
+        <span>Direct: <strong>scm@shlshl.com</strong></span>
+        <span>✦</span>
+        <span>HQ: <strong>shlshl.com</strong></span>
+      </div>
+    </section>
+
+    <!-- MIDDLE AREA: 20+ YEARS OF EXPERIENCE (COMMANDING METRIC) -->
+    <div class="experience-card">
+      <div class="exp-big-number">
+        <span>20</span>
+        <span class="exp-plus-sign">+</span>
+      </div>
+      <div class="exp-meta-col">
+        <div class="exp-title">Years of Leadership</div>
+        <div class="exp-sub">Automotive vehicle logistics, commodity trade networks, and multimodal freight architecture across Asia &amp; worldwide corridors.</div>
+      </div>
+    </div>
+
+    <!-- LOWER AREA: EDITORIAL EXPERTISE LINE -->
+    <div class="expertise-band">
+      <div class="expertise-line">
+        <span class="expertise-item">Vehicle Logistics</span>
+        <span class="expertise-diamond">✦</span>
+        <span class="expertise-item">International Trading</span>
+        <span class="expertise-diamond">✦</span>
+        <span class="expertise-item">Ocean &amp; Air Freight</span>
+        <span class="expertise-diamond">✦</span>
+        <span class="expertise-item">SCM Architecture</span>
+      </div>
+    </div>
+
+    <!-- Thin separator line above finish -->
+    <div class="bottom-divider"></div>
+
+    <!-- FINISH: OFFICIAL REAL TAGLINE & GLOBAL REACH -->
+    <footer class="bottom-footer">
+      <div class="footer-left-col">
+        <div class="tagline-text">Connecting the World. Delivering Possibilities.</div>
+        <div class="company-signoff">SHL International Co. Limited · East China Normal University Science Park, Shanghai</div>
+      </div>
+      <div class="footer-right-hubs">
+        <span class="hub-code">Shanghai</span>
+        <div class="hub-dot"></div>
+        <span class="hub-code">Ningbo</span>
+        <div class="hub-dot"></div>
+        <span class="hub-code">Rotterdam</span>
+        <div class="hub-dot"></div>
+        <span class="hub-code">Dubai</span>
+        <span class="footer-web-badge">shlshl.com</span>
+      </div>
+    </footer>
+
+  </div>
+
 </body>
 </html>
