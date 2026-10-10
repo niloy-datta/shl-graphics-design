@@ -33,6 +33,21 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+      - name: Prepare licensed Shanghai skyline background
+        run: |
+          if [ ! -s assets/shanghai-night.png ]; then
+            python3 -m pip install --quiet Pillow
+            curl --fail --location --retry 3 --connect-timeout 12 --max-time 60 --silent --show-error \
+              "https://images.pexels.com/photos/32467111/pexels-photo-32467111.jpeg?cs=tinysrgb&w=1600" \
+              -o /tmp/shl-shanghai-source.jpg
+            python3 - <<'PY'
+          from PIL import Image, ImageOps
+          img = Image.open('/tmp/shl-shanghai-source.jpg')
+          img = ImageOps.exif_transpose(img).convert('RGB')
+          img.save('assets/shanghai-night.png', optimize=True)
+          print('Background image prepared:', img.size)
+          PY
+          fi
       - name: Export 1080x1350 PNG
         run: npm run export
       - name: Verify dimensions and image size
@@ -43,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add shl-sara-huang-linkedin.png
+          git add shl-sara-huang-linkedin.png assets/shanghai-night.png
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh SHL LinkedIn poster image"
             git push
