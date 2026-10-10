@@ -1,14 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=poster.html">
-  <title>Executive Announcement Poster</title>
-  <script>
-    window.location.replace("poster.html");
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071524">
+<meta name="description" content="A SHL International people spotlight celebrating Sara Huang, Supply Chain Manager at the Shanghai office.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Welcome Sara Huang | SHL International">
+<meta property="og:description" content="Connecting the world. Delivering possibilities. Meet Sara Huang, Supply Chain Manager.">
+<meta property="og:image" content="https://shl-graphics-design.onrender.com/shl-sara-huang-linkedin.png">
+<title>SHL People Series — Welcome Sara Huang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#061321;--blue:#102c48;--gold:#e1c287;--text:#f7f6f2;--muted:#a6b9c7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 80% 15%,#153455 0,transparent 43%),#061321;color:var(--text);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:inherit}
+.site-header{height:94px;border-bottom:1px solid #ffffff18;display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:auto;padding:0 5%}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:45px;height:45px;object-fit:contain;border:1px solid #debf7c55}
+.brand-name{font-size:14px;font-weight:800;letter-spacing:.11em}
+.brand-sub{display:block;font-size:9px;letter-spacing:.18em;color:#b8c4cc;margin-top:5px}
+.top-link{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--muted);text-decoration:none;transition:color .2s}
+.top-link:hover{color:var(--gold)}
+.outer{max-width:1440px;margin:auto;padding:80px 5% 60px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.28em;font-weight:800;color:var(--gold);display:flex;align-items:center;gap:16px}
+.eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,.83fr);align-items:center;gap:min(7vw,110px)}
+.hero-title{font-size:clamp(52px,5.5vw,90px);line-height:1.02;letter-spacing:-.065em;margin:28px 0;font-weight:800}
+.hero-title em{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.025em;color:var(--gold)}
+.lead{max-width:520px;font-size:16px;line-height:1.9;color:#bfceda;margin:0 0 32px}
+.stats{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:33px 0 40px}
+.stat{display:flex;align-items:center;gap:13px}
+.stat-num{color:var(--gold);font-family:"Cormorant Garamond",Georgia,serif;font-size:44px;font-weight:600;line-height:.9}
+.stat-text{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#c2cdd9;line-height:1.65;font-weight:700}
+.stat-divider{width:1px;height:42px;background:#e1c28755}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{min-height:52px;padding:0 24px;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:14px;font-size:12px;font-weight:800;letter-spacing:.035em;transition:background .2s,color .2s,transform .2s;border:1px solid #d8bd85;border-radius:4px}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--gold);color:#0b2136}
+.primary:hover{background:#f1dba9}
+.secondary{background:transparent;color:#f2e6ce;border-color:#5d7285}
+.secondary:hover{border-color:var(--gold)}
+.preview-column{position:relative;min-width:0}
+.preview-accent{position:absolute;right:-23px;top:-20px;left:28px;bottom:39px;border:1px solid #e1c28765;z-index:0;pointer-events:none}
+.poster-preview{z-index:1;position:relative;aspect-ratio:4/5;width:100%;overflow:hidden;background:#102742;box-shadow:0 35px 90px #0008;border:1px solid #e1c28766}
+.poster-preview iframe{border:0;display:block;width:1080px;height:1350px;transform-origin:0 0;pointer-events:none}
+.preview-caption{display:flex;justify-content:space-between;gap:10px;margin-top:19px;color:#8faabd;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:800}
+.section{padding-top:83px;margin-top:100px;border-top:1px solid #ffffff25}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:30px}
+.section h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(38px,4.1vw,58px);margin:12px 0 0;line-height:1}
+.section-note{font-size:14px;color:var(--muted);max-width:355px;line-height:1.8;margin:0}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.feature{border:1px solid #c6d5e32b;padding:28px;background:linear-gradient(150deg,#18385455,#06172410);min-height:170px}
+.feature-num{font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:800}
+.feature h3{font-size:17px;margin:21px 0 9px;line-height:1.4}
+.feature p{font-size:13px;line-height:1.75;color:#a9bbc9;margin:0}
+.bottom{border-top:1px solid #ffffff25;margin-top:90px;padding:26px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#9eb1bf;font-size:12px}
+.bottom a{text-decoration:none;color:#e4cc9e}
+@media (max-width:920px){.outer{padding-top:58px}.intro{grid-template-columns:1fr;gap:50px}.hero-title{max-width:680px}.preview-column{max-width:620px;margin:auto;width:100%}.section{margin-top:64px}.feature-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:590px){.site-header{height:78px;padding:0 6%}.brand-name{font-size:11px}.brand-sub{font-size:8px}.top-link{font-size:9px}.outer{padding:48px 6%}.eyebrow{font-size:10px}.hero-title{font-size:clamp(51px,13.3vw,78px)}.lead{font-size:14px}.stats{gap:16px}.stat-divider{display:none}.actions{flex-direction:column}.btn{width:100%}.preview-accent{right:-9px;top:-9px;bottom:17px}.preview-caption{font-size:9px}.section{padding-top:55px}.section-head{display:block}.section-note{margin-top:14px}.feature-grid{grid-template-columns:1fr}.bottom{margin-top:55px;flex-direction:column;align-items:flex-start;line-height:1.6}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+</style>
 </head>
-<body style="font-family: sans-serif; background: #0b1120; color: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
-  <p>Redirecting to <a href="poster.html" style="color: #38bdf8;">poster.html</a>...</p>
+<body>
+<header class="site-header">
+  <a class="brand" href="https://shlshl.com/" aria-label="SHL International official website" target="_blank" rel="noopener noreferrer">
+    <img src="assets/shl-logo-highres.png" alt="" aria-hidden="true">
+    <span><span class="brand-name">SHL INTERNATIONAL</span><span class="brand-sub">GLOBAL LOGISTICS / PEOPLE SERIES</span></span>
+  </a>
+  <a class="top-link" href="https://shlshl.com/" target="_blank" rel="noopener noreferrer">OFFICIAL WEBSITE <span aria-hidden="true">↗</span></a>
+</header>
+<main class="outer">
+  <div class="intro">
+    <section aria-labelledby="hero-heading">
+      <div class="eyebrow">The people behind global progress</div>
+      <h1 class="hero-title" id="hero-heading">A global vision.<br><em>A remarkable</em><br>new chapter.</h1>
+      <p class="lead">SHL International welcomes <strong style="color:#f8f8f4">Sara Huang</strong> as Supply Chain Manager at our Shanghai office. Two decades of industry experience. One global team, moving forward together.</p>
+      <div class="stats" aria-label="Role information">
+        <div class="stat"><span class="stat-num">20</span><span class="stat-text">Years of<br>experience</span></div>
+        <span class="stat-divider"></span>
+        <div class="stat"><span class="stat-num">SHA</span><span class="stat-text">Shanghai<br>office</span></div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="shl-sara-huang-linkedin.png" download="shl-sara-huang-linkedin.png">Download LinkedIn poster <span aria-hidden="true">↓</span></a>
+        <a class="btn secondary" href="poster.html" target="_blank" rel="noopener">Open full artwork <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <div class="preview-column">
+      <div class="preview-accent"></div>
+      <div class="poster-preview" id="poster-preview" aria-label="Live preview of Sara Huang welcome poster">
+        <iframe title="Sara Huang welcome poster" src="poster.html" loading="eager"></iframe>
+      </div>
+      <div class="preview-caption"><span>SHL PEOPLE / NO. 001</span><span>1080 × 1350 / 4:5</span></div>
+    </div>
+  </div>
+  <section class="section" aria-labelledby="approach-heading">
+    <div class="section-head">
+      <div><div class="eyebrow">SHL Creative / Visual Identity</div><h2 id="approach-heading">One team. Worldwide impact.</h2></div>
+      <p class="section-note">An editorial announcement aligned with SHL International’s global logistics identity.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature"><span class="feature-num">01 / PEOPLE</span><h3>Experience leads the way</h3><p>Celebrating Sara’s experience in vehicle logistics, international trading and customer support.</p></article>
+      <article class="feature"><span class="feature-num">02 / ORIGIN</span><h3>Grounded in Shanghai</h3><p>A nod to SHL’s headquarters and the international supply chains coordinated from China.</p></article>
+      <article class="feature"><span class="feature-num">03 / PURPOSE</span><h3>Connecting possibilities</h3><p>Ocean, air, road and rail services connect businesses around the world.</p></article>
+    </div>
+  </section>
+</main>
+<footer class="bottom"><span>SHL GROUP © 2026 · Connecting the world. Delivering possibilities.</span><a href="https://shlshl.com/" target="_blank" rel="noopener noreferrer">Visit shlshl.com ↗</a></footer>
+<script>
+(function(){
+ const host=document.getElementById('poster-preview');
+ const frame=host.querySelector('iframe');
+ function resize(){const scale=host.clientWidth/1080;frame.style.transform='scale('+scale+')';}
+ if(window.ResizeObserver){new ResizeObserver(resize).observe(host)}
+ window.addEventListener('resize',resize,{passive:true});
+ resize();
+})();
+</script>
 </body>
 </html>
