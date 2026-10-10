@@ -1,0 +1,36 @@
+name: Verify 3D design
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'test-3d.js'
+      - '.github/workflows/test-3d.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Test desktop and mobile
+        run: node test-3d.js
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: threejs-design-screenshots
+          path: test-output/
+          if-no-files-found: ignore
