@@ -61,6 +61,6 @@ jobs:
           git add shl-sara-huang-linkedin.png assets/shanghai-night.png
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh SHL LinkedIn poster image"
-            git pull --rebase origin main
+            git -c rebase.autoStash=true pull --rebase origin main
             git push
           fi
