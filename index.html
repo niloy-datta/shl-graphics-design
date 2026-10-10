@@ -1,125 +1,378 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071524">
-<meta name="description" content="A SHL International people spotlight celebrating Sara Huang, Supply Chain Manager at the Shanghai office.">
+<meta name="theme-color" content="#071422">
+<meta name="description" content="SHL International People Series: welcoming Sara Huang to our Shanghai supply chain team. A cinematic global creative experience.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Welcome Sara Huang | SHL International">
-<meta property="og:description" content="Connecting the world. Delivering possibilities. Meet Sara Huang, Supply Chain Manager.">
+<meta property="og:title" content="SHL / PEOPLE — Sara Huang">
+<meta property="og:description" content="People who move the world. Welcome Sara Huang, Supply Chain Manager — Shanghai Office.">
 <meta property="og:image" content="https://shl-graphics-design.onrender.com/shl-sara-huang-linkedin.png">
-<title>SHL People Series — Welcome Sara Huang</title>
+<title>SHL / PEOPLE 001 — Sara Huang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#061321;--blue:#102c48;--gold:#e1c287;--text:#f7f6f2;--muted:#a6b9c7}
+:root{--night:#071422;--night2:#0d233a;--cream:#f5f4ee;--gold:#efd19a;--gold2:#bd9254;--ice:#abd4e8;--muted:#a5b9c9}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(ellipse at 80% 15%,#153455 0,transparent 43%),#061321;color:var(--text);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+body{background:#071422;color:var(--cream);margin:0;font-family:"Manrope",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button,a{-webkit-tap-highlight-color:transparent}
 a{color:inherit}
-.site-header{height:94px;border-bottom:1px solid #ffffff18;display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:auto;padding:0 5%}
-.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.brand img{width:45px;height:45px;object-fit:contain;border:1px solid #debf7c55}
-.brand-name{font-size:14px;font-weight:800;letter-spacing:.11em}
-.brand-sub{display:block;font-size:9px;letter-spacing:.18em;color:#b8c4cc;margin-top:5px}
-.top-link{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--muted);text-decoration:none;transition:color .2s}
-.top-link:hover{color:var(--gold)}
-.outer{max-width:1440px;margin:auto;padding:80px 5% 60px}
-.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.28em;font-weight:800;color:var(--gold);display:flex;align-items:center;gap:16px}
-.eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
-.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,.83fr);align-items:center;gap:min(7vw,110px)}
-.hero-title{font-size:clamp(52px,5.5vw,90px);line-height:1.02;letter-spacing:-.065em;margin:28px 0;font-weight:800}
-.hero-title em{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.025em;color:var(--gold)}
-.lead{max-width:520px;font-size:16px;line-height:1.9;color:#bfceda;margin:0 0 32px}
-.stats{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:33px 0 40px}
-.stat{display:flex;align-items:center;gap:13px}
-.stat-num{color:var(--gold);font-family:"Cormorant Garamond",Georgia,serif;font-size:44px;font-weight:600;line-height:.9}
-.stat-text{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#c2cdd9;line-height:1.65;font-weight:700}
-.stat-divider{width:1px;height:42px;background:#e1c28755}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.btn{min-height:52px;padding:0 24px;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:14px;font-size:12px;font-weight:800;letter-spacing:.035em;transition:background .2s,color .2s,transform .2s;border:1px solid #d8bd85;border-radius:4px}
+::selection{background:#efd19a;color:#071422}
+.backdrop{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 47% 43% at 88% 31%,#15395790,transparent),radial-gradient(ellipse 40% 55% at -5% 85%,#12375855,transparent),#071422}
+.backdrop::after{content:"";position:absolute;inset:0;opacity:.17;background-image:radial-gradient(rgba(235,209,157,.33) .5px,transparent .8px);background-size:7px 7px}
+.container{width:min(1440px,calc(100% - 112px));margin:0 auto}
+.header{min-height:102px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #d9bf882a;position:relative;z-index:10}
+.brand{display:flex;gap:15px;align-items:center;text-decoration:none}
+.brand img{height:50px;width:50px;object-fit:contain;border:1px solid #d2b77855}
+.brand span{display:flex;flex-direction:column;gap:7px}
+.brand strong{font-size:14px;letter-spacing:2px;font-weight:800}
+.brand small{font-size:9px;color:#b7c8d5;font-weight:800;letter-spacing:1.55px}
+.header-right{display:flex;align-items:center;gap:28px}
+.micro{font-size:10px;color:var(--gold);font-weight:800;letter-spacing:2px}
+.header-link{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.6px;color:#b8cbd9;text-decoration:none;transition:color .2s}
+.header-link:hover{color:var(--gold)}
+.hero{min-height:760px;display:grid;grid-template-columns:53% 47%;align-items:center;position:relative;padding:59px 0 50px}
+.hero-left{position:relative;z-index:5;margin-right:-40px;padding-bottom:16px}
+.issue{font-size:11px;letter-spacing:3.4px;font-weight:800;color:var(--gold);display:flex;align-items:center;gap:14px}
+.issue::before{content:"";width:41px;height:2px;background:var(--gold)}
+.headline{font-size:clamp(77px,8.1vw,130px);line-height:.89;letter-spacing:-.105em;font-weight:800;margin:42px 0 34px;color:#fcfaf6}
+.headline .italic{display:block;font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:.83em;letter-spacing:-.095em;line-height:1.05;font-weight:500;color:var(--gold);margin:10px 0 9px 3px}
+.headline .line-last{display:block;letter-spacing:-.08em}
+.hero-summary{max-width:490px;font-size:16px;line-height:1.85;color:#b8cad7;margin:0 0 37px}
+.hero-summary strong{color:#f6f0e5;font-weight:800}
+.hero-buttons{display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+.btn{height:55px;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;gap:15px;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.035em;padding:0 25px;transition:background .25s,transform .25s,border-color .25s}
 .btn:hover{transform:translateY(-2px)}
-.primary{background:var(--gold);color:#0b2136}
-.primary:hover{background:#f1dba9}
-.secondary{background:transparent;color:#f2e6ce;border-color:#5d7285}
-.secondary:hover{border-color:var(--gold)}
-.preview-column{position:relative;min-width:0}
-.preview-accent{position:absolute;right:-23px;top:-20px;left:28px;bottom:39px;border:1px solid #e1c28765;z-index:0;pointer-events:none}
-.poster-preview{z-index:1;position:relative;aspect-ratio:4/5;width:100%;overflow:hidden;background:#102742;box-shadow:0 35px 90px #0008;border:1px solid #e1c28766}
-.poster-preview iframe{border:0;display:block;width:1080px;height:1350px;transform-origin:0 0;pointer-events:none}
-.preview-caption{display:flex;justify-content:space-between;gap:10px;margin-top:19px;color:#8faabd;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:800}
-.section{padding-top:83px;margin-top:100px;border-top:1px solid #ffffff25}
-.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:30px}
-.section h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(38px,4.1vw,58px);margin:12px 0 0;line-height:1}
-.section-note{font-size:14px;color:var(--muted);max-width:355px;line-height:1.8;margin:0}
-.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
-.feature{border:1px solid #c6d5e32b;padding:28px;background:linear-gradient(150deg,#18385455,#06172410);min-height:170px}
-.feature-num{font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:800}
-.feature h3{font-size:17px;margin:21px 0 9px;line-height:1.4}
-.feature p{font-size:13px;line-height:1.75;color:#a9bbc9;margin:0}
-.bottom{border-top:1px solid #ffffff25;margin-top:90px;padding:26px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#9eb1bf;font-size:12px}
-.bottom a{text-decoration:none;color:#e4cc9e}
-@media (max-width:920px){.outer{padding-top:58px}.intro{grid-template-columns:1fr;gap:50px}.hero-title{max-width:680px}.preview-column{max-width:620px;margin:auto;width:100%}.section{margin-top:64px}.feature-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:590px){.site-header{height:78px;padding:0 6%}.brand-name{font-size:11px}.brand-sub{font-size:8px}.top-link{font-size:9px}.outer{padding:48px 6%}.eyebrow{font-size:10px}.hero-title{font-size:clamp(51px,13.3vw,78px)}.lead{font-size:14px}.stats{gap:16px}.stat-divider{display:none}.actions{flex-direction:column}.btn{width:100%}.preview-accent{right:-9px;top:-9px;bottom:17px}.preview-caption{font-size:9px}.section{padding-top:55px}.section-head{display:block}.section-note{margin-top:14px}.feature-grid{grid-template-columns:1fr}.bottom{margin-top:55px;flex-direction:column;align-items:flex-start;line-height:1.6}}
-@media (prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+.btn.primary{background:var(--gold);color:#091827;border:1px solid var(--gold)}
+.btn.primary:hover{background:#ffe6b5}
+.btn.secondary{background:#142e4655;border:1px solid #acc4d570;color:#f0f5f7}
+.btn.secondary:hover{border-color:var(--gold)}
+.section-index{position:absolute;bottom:34px;left:0;display:flex;align-items:center;gap:18px;color:#819aae;font-size:10px;letter-spacing:2.2px;font-weight:800}
+.section-index::before{content:"";height:1px;width:74px;background:#d3bc8a66}
+.hero-visual{position:relative;z-index:2;height:720px;margin-right:-72px;margin-left:-70px;isolation:isolate}
+.visual-light{position:absolute;inset:7% 5%;border-radius:50%;background:radial-gradient(circle,#2255804d,#0d2b4c22 46%,transparent 73%);filter:blur(21px)}
+.globe-fallback{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);border:1px solid #d8bb8266;width:590px;height:590px;border-radius:50%;box-shadow:inset 0 0 95px #31a9e114,0 0 160px #2f93d718;
+ background:repeating-radial-gradient(circle at center,transparent 0,transparent 82px,#8acbeb10 83px,transparent 84px),radial-gradient(circle at 30% 35%,#20486a50,#06172a77 64%,#041222 100%)}
+.globe-fallback:before{content:"";position:absolute;inset:44px;border:1px dashed #e9c68955;border-radius:50%}
+.globe-fallback:after{content:"";position:absolute;inset:-14px;border:1px solid #a9c7db2a;border-radius:50%;transform:scaleX(.72) rotate(30deg)}
+#globe-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:0;transition:opacity .9s}
+.webgl-ready #globe-canvas{opacity:1}
+.webgl-ready .globe-fallback{opacity:0}
+.visual-arc{pointer-events:none;position:absolute;z-index:2;top:64px;left:93px;width:550px;height:550px;border-radius:50%;border:1px solid #e3bd7d26;transform:rotate(-29deg) scaleX(.9)}
+.visual-arc:before{content:"";position:absolute;inset:-32px;border-radius:50%;border:1px solid #73b6dc20}
+.hero-visual .sector-title{position:absolute;z-index:5;top:90px;right:67px;font-size:10px;color:#edcd96;letter-spacing:2.6px;font-weight:800}
+.visual-stamp{position:absolute;top:160px;left:16px;z-index:5;writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:4px;color:#9eb7c9;font-size:10px;font-weight:800}
+.hero-portrait{position:absolute;z-index:6;right:2%;bottom:43px;width:318px;min-height:360px;pointer-events:none;filter:drop-shadow(-15px 20px 36px #0008)}
+.hero-portrait img{display:block;width:100%;height:auto;mask-image:linear-gradient(to bottom,#000 64%,transparent 98%);-webkit-mask-image:linear-gradient(to bottom,#000 64%,transparent 98%)}
+.sara-label{position:absolute;z-index:8;right:0;bottom:64px;background:linear-gradient(125deg,#112e48f5,#091929fa);border:1px solid #dcbd7c99;border-left:3px solid var(--gold);padding:23px 27px;min-width:345px;box-shadow:0 14px 45px #0008;backdrop-filter:blur(10px)}
+.sara-label small{display:block;font-size:9px;letter-spacing:2.9px;font-weight:800;color:#debe84;margin-bottom:12px}
+.sara-label strong{font-size:26px;letter-spacing:-.8px;font-weight:800;line-height:1.2}
+.sara-label span{display:block;color:#bfd4e3;font-size:12px;letter-spacing:.6px;margin-top:9px;font-weight:700}
+.coordinate{position:absolute;left:95px;bottom:95px;z-index:4;color:#e0c18b;font-size:10px;font-weight:800;letter-spacing:2.3px}
+.side-rule{position:absolute;left:46px;top:135px;bottom:105px;width:1px;background:linear-gradient(transparent,#b8d9e841,transparent);z-index:4}
+.ambient-stars{position:absolute;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(#f4d8a166 1px,transparent 1px);background-size:90px 95px;opacity:.4;mask-image:radial-gradient(ellipse at 60% 43%,black,transparent 78%)}
+.ticker{position:relative;display:flex;gap:0;align-items:center;justify-content:space-between;padding:21px 0;border-top:1px solid #dabc874f;border-bottom:1px solid #dabc874f}
+.ticker .p{display:flex;align-items:center;gap:14px;font-size:11px;text-transform:uppercase;letter-spacing:1.95px;color:#b2c8d9;font-weight:800}
+.ticker .p i{display:inline-block;width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+.ticker .p strong{color:var(--gold)}
+.poster-section{padding:120px 0 60px}
+.section-top{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:40px}
+.section-kicker{font-size:11px;font-weight:800;letter-spacing:3px;color:#dfc08a;text-transform:uppercase}
+.section-title{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(48px,5.5vw,80px);line-height:1.16;letter-spacing:-.05em;margin:20px 0 0}
+.section-title em{color:#e8c990}
+.section-desc{max-width:370px;color:#b6c7d4;font-size:14px;line-height:1.85;margin-bottom:6px}
+.showcase{display:grid;grid-template-columns:minmax(320px,470px) 1fr;gap:clamp(38px,7vw,106px);align-items:center}
+.artwork-wrap{max-width:460px;position:relative;isolation:isolate}
+.artwork-wrap:before{content:"";position:absolute;inset:-17px -17px 17px 17px;border:1px solid #dfbf8180;z-index:0}
+.artwork-wrap img{position:relative;z-index:1;width:100%;height:auto;display:block;border:1px solid #d1b17c77;box-shadow:0 26px 65px #0009;background:#0b2135}
+.artwork-caption{display:flex;justify-content:space-between;gap:10px;font-size:10px;letter-spacing:1.6px;font-weight:800;color:#88a8bd;margin-top:23px;text-transform:uppercase}
+.details{max-width:570px;padding:16px 0}
+.details-top{font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:var(--gold)}
+.details h3{font-size:clamp(39px,4vw,60px);line-height:1.18;letter-spacing:-.065em;margin:24px 0 30px;font-weight:800}
+.details h3 span{font-family:"Playfair Display",Georgia,serif;font-style:italic;letter-spacing:-.04em;color:var(--gold);font-weight:500}
+.details p{color:#b4c8d8;font-size:15px;line-height:1.95;margin:0 0 30px}
+.detail-row{padding:18px 0;border-top:1px solid #b7d2e132;display:flex;gap:20px;align-items:flex-start;justify-content:space-between}
+.detail-row:last-of-type{border-bottom:1px solid #b7d2e132}
+.detail-row .k{font-size:10px;font-weight:800;letter-spacing:1.9px;color:#c6a976;text-transform:uppercase}
+.detail-row .v{font-size:14px;color:#ebf2f6;font-weight:700;text-align:right}
+.poster-actions{display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-top:35px}
+.signature{padding:100px 0 80px}
+.signature-banner{background:linear-gradient(106deg,#193750,#0b2339 60%,#081727);padding:53px 65px;border:1px solid #debe8152;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}
+.signature-banner:after{content:"";position:absolute;right:-100px;top:-260px;width:500px;height:500px;border-radius:50%;border:1px solid #e9cb9450;box-shadow:0 0 0 35px #eac78b0a,0 0 0 85px #eac78b08;pointer-events:none}
+.signature-banner .quote{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:clamp(28px,3vw,46px);line-height:1.35;max-width:770px;letter-spacing:-.035em;position:relative;z-index:1}
+.signature-banner .quote em{color:#efcf96;font-style:normal}
+.signature-banner .mark{font-size:11px;letter-spacing:2.1px;font-weight:800;color:#dfbf83;white-space:nowrap;position:relative;z-index:1}
+.footer{padding:28px 0 38px;border-top:1px solid #b8cbe32b;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:11px;color:#96acba;letter-spacing:.6px}
+.footer strong{color:#e8ce9a;font-weight:800}
+.footer a{text-decoration:none;color:#becdd8;font-weight:700}
+.footer a:hover{color:var(--gold)}
+@media (max-width:1250px){.container{width:min(1330px,calc(100% - 70px))}.headline{font-size:clamp(73px,8vw,106px)}.hero{grid-template-columns:54% 46%}.hero-visual{margin-right:-35px;margin-left:-65px}.hero-portrait{width:285px}.sara-label{min-width:315px}.globe-fallback{width:500px;height:500px}}
+@media (max-width:960px){.hero{min-height:0;display:flex;flex-direction:column;align-items:stretch;padding:84px 0 30px;gap:30px}.hero-left{margin-right:0}.headline{font-size:clamp(74px,12vw,115px)}.hero-visual{width:100%;margin:0 auto;height:670px}.hero-portrait{right:4%;width:300px}.sara-label{right:3%}.hero-summary{max-width:650px}.section-index{position:relative;bottom:auto;margin-top:46px}.poster-section{padding-top:90px}.showcase{gap:40px;grid-template-columns:minmax(250px,.85fr) 1fr}.ticker .p{font-size:9px;letter-spacing:1px}.ticker .p:nth-last-child(1){display:none}}
+@media (max-width:680px){.container{width:calc(100% - 40px)}.header{min-height:81px}.brand{gap:10px}.brand img{width:42px;height:42px}.brand strong{font-size:11px;letter-spacing:1px}.brand small{font-size:7px;letter-spacing:1px}.header-right{gap:10px}.header-right .micro{display:none}.header-link{font-size:9px;letter-spacing:.5px}.hero{padding-top:59px;gap:10px}.issue{font-size:10px;letter-spacing:2px}.issue:before{width:25px}.headline{margin-top:30px;font-size:clamp(60px,12.7vw,91px);letter-spacing:-.093em}.hero-summary{font-size:14px;line-height:1.85;margin-bottom:27px}.hero-buttons .btn{width:100%}.hero-visual{height:480px;margin-top:14px}.globe-fallback{width:380px;height:380px;top:42%}.visual-arc{width:380px;height:380px;top:35px;left:calc(50% - 195px)}.hero-portrait{width:205px;right:4%;bottom:18px}.sara-label{right:0;bottom:5px;padding:16px 18px;min-width:245px}.sara-label small{font-size:8px;margin-bottom:7px;letter-spacing:1.5px}.sara-label strong{font-size:19px}.sara-label span{font-size:10px;margin-top:5px}.visual-stamp,.coordinate,.side-rule{display:none}.hero-visual .sector-title{top:10px;right:4px;font-size:8px}.ticker{flex-wrap:wrap;row-gap:14px}.ticker .p{font-size:8px}.ticker .p:last-child{display:none}.poster-section{padding:73px 0 30px}.section-top{display:block}.section-title{font-size:48px}.section-desc{margin-top:16px}.showcase{grid-template-columns:1fr;gap:35px}.artwork-wrap{max-width:410px;width:calc(100% - 19px);margin:0 auto}.details h3{font-size:44px}.signature{padding:60px 0}.signature-banner{padding:31px 26px;display:block}.signature-banner .quote{font-size:29px}.signature-banner .mark{margin-top:28px}.footer{flex-wrap:wrap;line-height:1.75;font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="https://shlshl.com/" aria-label="SHL International official website" target="_blank" rel="noopener noreferrer">
-    <img src="assets/shl-logo-highres.png" alt="" aria-hidden="true">
-    <span><span class="brand-name">SHL INTERNATIONAL</span><span class="brand-sub">GLOBAL LOGISTICS / PEOPLE SERIES</span></span>
-  </a>
-  <a class="top-link" href="https://shlshl.com/" target="_blank" rel="noopener noreferrer">OFFICIAL WEBSITE <span aria-hidden="true">↗</span></a>
+<div class="backdrop" aria-hidden="true"></div>
+<header class="header container">
+<a class="brand" href="https://shlshl.com/" rel="noopener noreferrer" target="_blank">
+<img src="assets/shl-logo-highres.png" alt="SHL company logo">
+<span><strong>SHL INTERNATIONAL</strong><small>GLOBAL LOGISTICS &amp; SUPPLY CHAIN</small></span>
+</a>
+<div class="header-right"><span class="micro">SHL / PEOPLE 001</span><a class="header-link" href="https://shlshl.com/" rel="noopener noreferrer" target="_blank">Official site ↗</a></div>
 </header>
-<main class="outer">
-  <div class="intro">
-    <section aria-labelledby="hero-heading">
-      <div class="eyebrow">The people behind global progress</div>
-      <h1 class="hero-title" id="hero-heading">A global vision.<br><em>A remarkable</em><br>new chapter.</h1>
-      <p class="lead">SHL International welcomes <strong style="color:#f8f8f4">Sara Huang</strong> as Supply Chain Manager at our Shanghai office. Two decades of industry experience. One global team, moving forward together.</p>
-      <div class="stats" aria-label="Role information">
-        <div class="stat"><span class="stat-num">20</span><span class="stat-text">Years of<br>experience</span></div>
-        <span class="stat-divider"></span>
-        <div class="stat"><span class="stat-num">SHA</span><span class="stat-text">Shanghai<br>office</span></div>
-      </div>
-      <div class="actions">
-        <a class="btn primary" href="shl-sara-huang-linkedin.png" download="shl-sara-huang-linkedin.png">Download LinkedIn poster <span aria-hidden="true">↓</span></a>
-        <a class="btn secondary" href="poster.html" target="_blank" rel="noopener">Open full artwork <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-    <div class="preview-column">
-      <div class="preview-accent"></div>
-      <div class="poster-preview" id="poster-preview" aria-label="Live preview of Sara Huang welcome poster">
-        <iframe title="Sara Huang welcome poster" src="poster.html" loading="eager"></iframe>
-      </div>
-      <div class="preview-caption"><span>SHL PEOPLE / NO. 001</span><span>1080 × 1350 / 4:5</span></div>
-    </div>
-  </div>
-  <section class="section" aria-labelledby="approach-heading">
-    <div class="section-head">
-      <div><div class="eyebrow">SHL Creative / Visual Identity</div><h2 id="approach-heading">One team. Worldwide impact.</h2></div>
-      <p class="section-note">An editorial announcement aligned with SHL International’s global logistics identity.</p>
-    </div>
-    <div class="feature-grid">
-      <article class="feature"><span class="feature-num">01 / PEOPLE</span><h3>Experience leads the way</h3><p>Celebrating Sara’s experience in vehicle logistics, international trading and customer support.</p></article>
-      <article class="feature"><span class="feature-num">02 / ORIGIN</span><h3>Grounded in Shanghai</h3><p>A nod to SHL’s headquarters and the international supply chains coordinated from China.</p></article>
-      <article class="feature"><span class="feature-num">03 / PURPOSE</span><h3>Connecting possibilities</h3><p>Ocean, air, road and rail services connect businesses around the world.</p></article>
-    </div>
-  </section>
+<main>
+<section class="hero container" aria-label="Welcome Sara Huang to SHL International">
+<div class="hero-left">
+<div class="issue">INTRODUCING / PEOPLE SERIES 001</div>
+<h1 class="headline">PEOPLE<br><span class="italic">who move</span><span class="line-last">THE WORLD.</span></h1>
+<p class="hero-summary">A new chapter in global logistics. Welcoming <strong>Sara Huang</strong> as Supply Chain Manager at SHL International’s Shanghai office—bringing <strong>20 years of experience</strong> across logistics and global trade.</p>
+<div class="hero-buttons">
+<a class="btn primary" href="shl-sara-huang-linkedin.png" download="shl-sara-huang-linkedin.png">Download the poster <span aria-hidden="true">↗</span></a>
+<a class="btn secondary" href="#artwork">Explore the design <span aria-hidden="true">↓</span></a>
+</div>
+<div class="section-index">A HUMAN STORY / A GLOBAL PERSPECTIVE</div>
+</div>
+<div class="hero-visual" id="globe-stage" aria-label="Decorative three-dimensional global network illustration">
+<div class="visual-light"></div><div class="ambient-stars"></div><div class="globe-fallback"></div>
+<div id="globe-canvas" aria-hidden="true"></div>
+<div class="visual-arc"></div>
+<div class="sector-title">SHL / GLOBAL CONNECTIONS</div>
+<div class="visual-stamp">DESIGNED TO CONNECT / BUILT TO MOVE</div>
+<div class="side-rule"></div>
+<div class="hero-portrait"><img src="assets/sara-huang-isolated.png" alt="Portrait of Sara Huang"></div>
+<div class="sara-label"><small>THE PEOPLE BEHIND THE PROGRESS</small><strong>Sara Huang</strong><span>Supply Chain Manager · Shanghai Office</span></div>
+<div class="coordinate">SHANGHAI, CHINA / WORLDWIDE</div>
+</div>
+</section>
+<section class="ticker container" aria-label="Areas of expertise">
+<div class="p"><i></i><strong>20 Years</strong> Experience</div>
+<div class="p"><i></i> Vehicle Logistics</div>
+<div class="p"><i></i> International Trading</div>
+<div class="p"><i></i> Supply Chain</div>
+</section>
+<section class="poster-section container" id="artwork">
+<div class="section-top">
+<div><div class="section-kicker">01 / THE ANNOUNCEMENT</div><h2 class="section-title">The art of <em>connection.</em></h2></div>
+<p class="section-desc">A bold editorial welcome, shaped around the people and experience that keep global supply chains moving.</p>
+</div>
+<div class="showcase">
+<div class="artwork-wrap">
+<img src="shl-sara-huang-linkedin.png" alt="SHL welcome announcement poster for Sara Huang, Supply Chain Manager" loading="lazy" width="1080" height="1350">
+<div class="artwork-caption"><span>SHL PEOPLE / 001</span><span>LINKEDIN / 4:5</span></div>
+</div>
+<div class="details">
+<div class="details-top">A SPECIAL WELCOME / SHANGHAI</div>
+<h3>Experience that<br><span>moves industries.</span></h3>
+<p>Sara brings two decades of expertise spanning vehicle logistics, international trading, logistics customer service and operational support. We look forward to the ideas, expertise and possibilities ahead.</p>
+<div class="detail-row"><span class="k">Name</span><span class="v">Sara Huang</span></div>
+<div class="detail-row"><span class="k">New Role</span><span class="v">Supply Chain Manager</span></div>
+<div class="detail-row"><span class="k">Location</span><span class="v">Shanghai Office</span></div>
+<div class="detail-row"><span class="k">Experience</span><span class="v">20 Years</span></div>
+<div class="poster-actions">
+<a class="btn primary" href="shl-sara-huang-linkedin.png" download="shl-sara-huang-linkedin.png">Get LinkedIn PNG ↓</a>
+<a class="btn secondary" href="poster.html" target="_blank" rel="noopener">View editable artwork ↗</a>
+</div>
+</div>
+</div>
+</section>
+<section class="signature container" aria-label="SHL company values">
+<div class="signature-banner"><div class="quote">“Connecting the world.<br><em>Delivering possibilities.</em>”</div><div class="mark">SHL INTERNATIONAL / GLOBAL</div></div>
+</section>
 </main>
-<footer class="bottom"><span>SHL GROUP © 2026 · Connecting the world. Delivering possibilities.</span><a href="https://shlshl.com/" target="_blank" rel="noopener noreferrer">Visit shlshl.com ↗</a></footer>
-<script>
-(function(){
- const host=document.getElementById('poster-preview');
- const frame=host.querySelector('iframe');
- function resize(){const scale=host.clientWidth/1080;frame.style.transform='scale('+scale+')';}
- if(window.ResizeObserver){new ResizeObserver(resize).observe(host)}
- window.addEventListener('resize',resize,{passive:true});
- resize();
-})();
+<footer class="footer container"><span>© 2026 SHL GROUP · THE PEOPLE WHO MOVE THE WORLD</span><span>CREATED FOR SHL INTERNATIONAL &nbsp; / &nbsp; <a href="https://shlshl.com/" target="_blank" rel="noopener noreferrer">SHLSHL.COM ↗</a></span></footer>
+
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js";
+
+const mount = document.getElementById("globe-canvas");
+const stage = document.getElementById("globe-stage");
+const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+if (mount && stage && window.WebGL2RenderingContext) {
+  try {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+    camera.position.set(0, 0, 7.4);
+    const renderer = new THREE.WebGLRenderer({alpha:true, antialias:true, powerPreference:"high-performance"});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.65));
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.5;
+    mount.appendChild(renderer.domElement);
+
+    scene.add(new THREE.AmbientLight(0x6cc6fd, 0.65));
+    const blueLight = new THREE.PointLight(0x50baff, 50, 14);
+    blueLight.position.set(-3, 4, 6);
+    scene.add(blueLight);
+    const goldLight = new THREE.PointLight(0xffd390, 38, 13);
+    goldLight.position.set(4, -2, 5);
+    scene.add(goldLight);
+
+    const globe = new THREE.Group();
+    globe.rotation.set(-0.09, -0.5, -0.13);
+    scene.add(globe);
+    const earth = new THREE.Mesh(new THREE.SphereGeometry(1.72, 48, 36),
+      new THREE.MeshPhongMaterial({color:0x0a2941, emissive:0x092039, specular:0x3b7895, shininess:44, transparent:true, opacity:0.92}));
+    globe.add(earth);
+    const gridMaterial = new THREE.LineBasicMaterial({color:0x78c4ec,transparent:true,opacity:0.18,depthWrite:false});
+    function drawCurve(points, material, parent) {
+      const geo = new THREE.BufferGeometry().setFromPoints(points);
+      const line = new THREE.Line(geo, material);
+      parent.add(line);
+      return line;
+    }
+    const radius = 1.735;
+    function position(latitude, longitude, r) {
+      const lat = latitude * Math.PI / 180;
+      const lon = longitude * Math.PI / 180;
+      return new THREE.Vector3(r * Math.cos(lat) * Math.cos(lon), r * Math.sin(lat), r * Math.cos(lat) * Math.sin(lon));
+    }
+    for (let latitude=-60;latitude<=60;latitude+=30) {
+      const pts=[];
+      for(let a=0;a<=128;a++)pts.push(position(latitude,-180+a*360/128,radius));
+      drawCurve(pts,gridMaterial,globe);
+    }
+    for (let longitude=0;longitude<180;longitude+=30) {
+      const pts=[];
+      for(let a=0;a<=112;a++)pts.push(position(-90+a*180/112,longitude,radius));
+      drawCurve(pts,gridMaterial,globe);
+      const opposite=[];
+      for(let a=0;a<=112;a++)opposite.push(position(-90+a*180/112,longitude+180,radius));
+      drawCurve(opposite,gridMaterial,globe);
+    }
+    const count = 2500;
+    const dotPositions = new Float32Array(count*3);
+    const dotColors = new Float32Array(count*3);
+    for(let i=0;i<count;i++) {
+      const y = 1 - (i/(count-1))*2;
+      const radial=Math.sqrt(1-y*y);
+      const theta=i*2.399963229728653;
+      dotPositions[i*3] = Math.cos(theta)*radial*1.745;
+      dotPositions[i*3+1] = y*1.745;
+      dotPositions[i*3+2] = Math.sin(theta)*radial*1.745;
+      const gold=(i%8===0);
+      dotColors[i*3] = gold ? 1 : 0.27;
+      dotColors[i*3+1] = gold ? 0.77 : 0.69;
+      dotColors[i*3+2] = gold ? 0.4 : 0.96;
+    }
+    const dotGeo=new THREE.BufferGeometry();
+    dotGeo.setAttribute("position",new THREE.BufferAttribute(dotPositions,3));
+    dotGeo.setAttribute("color",new THREE.BufferAttribute(dotColors,3));
+    globe.add(new THREE.Points(dotGeo,new THREE.PointsMaterial({size:0.024,vertexColors:true,transparent:true,opacity:0.85,depthWrite:false})));
+
+    const origin=position(31.23,121.47,1.78);
+    const destinations=[[51.5,-0.1],[25.2,55.27],[40.7,-74],[-33.9,151.2],[52,4.9],[35.7,139.7],[-23.5,-46.6],[1.35,103.82]];
+    const lines=[];
+    destinations.forEach((target,i)=>{
+      const end=position(target[0],target[1],1.78);
+      const midpoint=origin.clone().add(end).normalize().multiplyScalar(2.08+0.12*(i%3));
+      const curve=new THREE.QuadraticBezierCurve3(origin,midpoint,end);
+      const geometry=new THREE.BufferGeometry().setFromPoints(curve.getPoints(70));
+      const material=new THREE.LineBasicMaterial({color:i%2===0?0xebc88a:0x64d8ff,transparent:true,opacity:0.49,depthWrite:false});
+      const line=new THREE.Line(geometry,material);
+      globe.add(line);
+      lines.push({line,phase:i*0.72});
+    });
+    const markers=[origin].concat(destinations.map(d=>position(d[0],d[1],1.78)));
+    const markerGeo=new THREE.SphereGeometry(0.039,10,10);
+    const markerMat=new THREE.MeshBasicMaterial({color:0xffdb95});
+    markers.forEach((coord,i)=>{
+      const marker=new THREE.Mesh(markerGeo,markerMat);
+      marker.position.copy(coord);
+      marker.scale.setScalar(i===0?1.5:0.75);
+      globe.add(marker);
+    });
+    const outerGlow=new THREE.Mesh(
+      new THREE.SphereGeometry(1.93,48,32),
+      new THREE.ShaderMaterial({
+        uniforms:{glowColor:{value:new THREE.Color(0x61ccff)}},
+        vertexShader:"varying vec3 vNormal;varying vec3 vView;void main(){vec4 p=modelViewMatrix*vec4(position,1.0);vNormal=normalize(normalMatrix*normal);vView=normalize(-p.xyz);gl_Position=projectionMatrix*p;}",
+        fragmentShader:"uniform vec3 glowColor;varying vec3 vNormal;varying vec3 vView;void main(){float rim=pow(1.0-abs(dot(normalize(vNormal),normalize(vView))),3.0);gl_FragColor=vec4(glowColor,rim*0.46);}",
+        blending:THREE.AdditiveBlending,transparent:true,side:THREE.BackSide,depthWrite:false
+      }));
+    globe.add(outerGlow);
+
+    function orbitalRing(rad,rx,ry,opacity,color) {
+      const mesh=new THREE.Mesh(new THREE.TorusGeometry(rad,0.006,3,180),new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:opacity,depthWrite:false}));
+      mesh.rotation.set(rx,ry,0);
+      scene.add(mesh);
+      return mesh;
+    }
+    const ringOne=orbitalRing(2.15,0.43,0.5,0.44,0xd3aa69);
+    const ringTwo=orbitalRing(2.36,-0.54,0.33,0.18,0x7bd9ef);
+
+    const stars=450;
+    const starArray=new Float32Array(stars*3);
+    for(let i=0;i<stars;i++){
+      const angle=i*2.399963229728653;
+      const spread=2.9+(i%17)*0.13;
+      starArray[3*i]=Math.cos(angle)*spread;
+      starArray[3*i+1]=((i*37)%97/97-.5)*6;
+      starArray[3*i+2]=-2.0+((i*29)%71)/71*2.7;
+    }
+    const starGeo=new THREE.BufferGeometry();
+    starGeo.setAttribute("position",new THREE.BufferAttribute(starArray,3));
+    const starCloud=new THREE.Points(starGeo,new THREE.PointsMaterial({size:.014,color:0x9dc7e0,transparent:true,opacity:.36,depthWrite:false}));
+    scene.add(starCloud);
+
+    let width=0,height=0;
+    function resize(){
+      const b=mount.getBoundingClientRect();
+      const w=Math.max(1,Math.round(b.width)),h=Math.max(1,Math.round(b.height));
+      if(w===width && h===height)return;
+      width=w;height=h;
+      camera.aspect=w/h;
+      camera.position.z=w<500?8.1:7.4;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w,h,false);
+    }
+    const ro=window.ResizeObserver?new ResizeObserver(resize):null;
+    if(ro)ro.observe(mount);
+    window.addEventListener("resize",resize,{passive:true});
+    resize();
+    let mouseX=0,mouseY=0;
+    function pointer(event){
+      const rect=stage.getBoundingClientRect();
+      mouseX=Math.max(-1,Math.min(1,((event.clientX-rect.left)/rect.width-.5)*2));
+      mouseY=Math.max(-1,Math.min(1,((event.clientY-rect.top)/rect.height-.5)*2));
+    }
+    stage.addEventListener("pointermove",pointer,{passive:true});
+    stage.addEventListener("pointerleave",()=>{mouseX=0;mouseY=0},{passive:true});
+    let paused=document.hidden;
+    function visibility(){paused=document.hidden;if(!paused)renderer.render(scene,camera)}
+    document.addEventListener("visibilitychange",visibility);
+    const clock=new THREE.Clock();
+    function frame(){
+      if(paused)return;
+      const t=clock.getElapsedTime();
+      if(!motionQuery.matches){
+        globe.rotation.y=-0.5+t*0.045+mouseX*0.07;
+        globe.rotation.x=-0.09-mouseY*0.055;
+        ringOne.rotation.z=t*0.012;
+        ringTwo.rotation.z=-t*0.009;
+        lines.forEach(l=>{l.line.material.opacity=.37+Math.sin(t*1.05+l.phase)*.14});
+      }
+      renderer.render(scene,camera);
+    }
+    renderer.setAnimationLoop(frame);
+    stage.classList.add("webgl-ready");
+    renderer.render(scene,camera);
+    window.addEventListener("pagehide",()=>{
+      renderer.setAnimationLoop(null);
+      ro?.disconnect();
+      renderer.dispose();
+      dotGeo.dispose();
+      starGeo.dispose();
+      markerGeo.dispose();
+    },{once:true});
+  } catch (error) {
+    console.warn("3D scene unavailable; showing visual fallback.",error);
+  }
+}
 </script>
 </body>
 </html>
