@@ -32,3 +32,13 @@ pnpm export
 # or: node export.js
 ```
 Captures the `#poster` element at exact 1080×1350 resolution to `shl-sara-huang-linkedin.png`.
+
+
+## Shanghai background photography
+
+- **Photographer:** Ted McDonnell / Pexels
+- **Image:** [Aerial View of Shanghai Skyline at Night](https://www.pexels.com/photo/aerial-view-of-shanghai-skyline-at-night-32467111/)
+- **License:** [Pexels License](https://www.pexels.com/license/) — usable for commercial marketing and social media; attribution appreciated, though not required.
+- **Local asset:** `assets/shanghai-night.png` (downloaded once by the poster export workflow and committed to the repository).
+
+The poster layers the photograph under dark navy gradients, leaving Sara Huang's authentic portrait and all typography clear. The editable poster remains `poster.html`, and GitHub Actions exports the 1080 × 1350 image to `shl-sara-huang-linkedin.png`.
