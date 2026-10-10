@@ -1,0 +1,22 @@
+{
+  "name": "shl-gragohis-diegn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "export.js",
+  "scripts": {
+    "dev": "live-server --port=5173 --open=poster.html",
+    "serve": "live-server --port=5173 --open=poster.html",
+    "export": "node export.js",
+    "build": "node export.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.64.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
