@@ -54,6 +54,78 @@
       box-shadow: 0 30px 100px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(213, 172, 88, 0.25);
     }
 
+    /* Shanghai After Dark — photographic global-trade backdrop, by Ted McDonnell / Pexels.
+       Source: https://www.pexels.com/photo/aerial-view-of-shanghai-skyline-at-night-32467111/
+       License: https://www.pexels.com/license/ */
+    .shanghai-night-photo {
+      position: absolute;
+      top: 330px;
+      left: 0;
+      right: 0;
+      height: 1010px;
+      z-index: 1;
+      pointer-events: none;
+      background-image:
+        linear-gradient(180deg,
+          #071b32 0%,
+          rgba(5, 17, 33, .88) 12%,
+          rgba(5, 17, 33, .49) 30%,
+          rgba(4, 18, 34, .12) 51%,
+          rgba(3, 13, 26, .32) 70%,
+          rgba(3, 12, 24, .82) 88%,
+          #030c18 100%),
+        linear-gradient(90deg,
+          rgba(4, 15, 31, .60) 0%,
+          rgba(6, 22, 42, .14) 48%,
+          rgba(3, 13, 27, .48) 100%),
+        url("assets/shanghai-night.png");
+      background-position: center center, center center, center 55%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: .84;
+      filter: saturate(.79) contrast(1.16);
+      -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 11%, #000 88%, transparent 100%);
+      mask-image: linear-gradient(180deg, transparent 0%, #000 11%, #000 88%, transparent 100%);
+    }
+
+    .night-photo-goldline {
+      position:absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      top: 987px;
+      height: 245px;
+      pointer-events:none;
+      background: radial-gradient(ellipse 52% 62% at 65% 45%, rgba(229, 180, 97, .12), transparent 75%);
+      mix-blend-mode:screen;
+    }
+
+    .night-photo-caption {
+      position:absolute;
+      z-index: 20;
+      top: 1037px;
+      right: 74px;
+      font: 800 10px 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 3.8px;
+      color: rgba(244, 221, 178, .8);
+      text-transform: uppercase;
+      text-shadow: 0 2px 14px #00111d;
+    }
+
+    /* Strengthen text readability over the real photograph */
+    .experience-card {
+      background: rgba(4, 18, 37, .84);
+      border-color: rgba(224, 186, 112, .44);
+      box-shadow: 0 25px 55px rgba(0, 0, 0, .42), 0 0 52px rgba(223, 174, 89, .05);
+    }
+    .expertise-band {
+      padding: 15px 12px;
+      background: linear-gradient(90deg, rgba(4,15,29,.80), rgba(5,24,44,.68), rgba(4,15,29,.80));
+      border-top: 1px solid rgba(217, 187, 125, .18);
+      border-bottom: 1px solid rgba(217, 187, 125, .18);
+      backdrop-filter: blur(6px);
+    }
+
     /* === ATMOSPHERIC EDITORIAL LIGHTING & DEPTH === */
     .spotlight-portrait {
       position: absolute;
@@ -718,6 +790,11 @@
   <!-- THE MASTER POSTER: 1080 x 1350 px -->
   <div class="poster-canvas" id="poster">
 
+    <!-- Genuine Shanghai nightscape behind the portrait and copy -->
+    <div class="shanghai-night-photo" aria-hidden="true"></div>
+    <div class="night-photo-goldline" aria-hidden="true"></div>
+    <div class="night-photo-caption">SHANGHAI / CONNECTED TO THE WORLD</div>
+
     <!-- Atmospheric lighting effects -->
     <div class="spotlight-portrait"></div>
     <div class="spotlight-ambient-left"></div>
@@ -839,13 +916,13 @@
         <svg class="location-pin-icon" viewBox="0 0 24 24">
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
         </svg>
-        <span>Shanghai Headquarters · Global Operations</span>
+        <span>Shanghai Office · Global Operations</span>
       </div>
 
       <div class="executive-contact-pill">
-        <span>Direct: <strong>scm@shlshl.com</strong></span>
+        <span>Official: <strong>shlshl.com</strong></span>
         <span>✦</span>
-        <span>HQ: <strong>shlshl.com</strong></span>
+        <span>Shanghai Office</span>
       </div>
     </section>
 
@@ -856,8 +933,8 @@
         <span class="exp-plus-sign">+</span>
       </div>
       <div class="exp-meta-col">
-        <div class="exp-title">Years of Leadership</div>
-        <div class="exp-sub">Automotive vehicle logistics, commodity trade networks, and multimodal freight architecture across Asia &amp; worldwide corridors.</div>
+        <div class="exp-title">Years of Experience</div>
+        <div class="exp-sub">Vehicle logistics, international trading, logistics customer service and operational support.</div>
       </div>
     </div>
 
@@ -881,16 +958,16 @@
     <footer class="bottom-footer">
       <div class="footer-left-col">
         <div class="tagline-text">Connecting the World. Delivering Possibilities.</div>
-        <div class="company-signoff">SHL International Co. Limited · East China Normal University Science Park, Shanghai</div>
+        <div class="company-signoff">SHL International Co. Limited · Shanghai, China</div>
       </div>
       <div class="footer-right-hubs">
         <span class="hub-code">Shanghai</span>
         <div class="hub-dot"></div>
         <span class="hub-code">Ningbo</span>
         <div class="hub-dot"></div>
-        <span class="hub-code">Rotterdam</span>
+        <span class="hub-code">Global</span>
         <div class="hub-dot"></div>
-        <span class="hub-code">Dubai</span>
+        <span class="hub-code">Network</span>
         <span class="footer-web-badge">shlshl.com</span>
       </div>
     </footer>
